@@ -21,7 +21,7 @@ public class MainController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String initPage(ModelMap model) throws NoSuchAlgorithmException {
 
-        return "createAdmin";
+        return "main";
     }
 
     @RequestMapping(value = "/main", method = RequestMethod.GET)
