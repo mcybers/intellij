@@ -20,6 +20,7 @@ import java.security.SecureRandom;
 @Transactional
 public class MemberService {
 
+
     @Autowired
     MemberRepository memberRepository;
 
