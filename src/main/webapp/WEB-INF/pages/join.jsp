@@ -11,21 +11,21 @@
         </tr>
         <tr>
             <td>ID</td>
-            <td><input class="input" type="text" name="id" maxlength="10"></td>
+            <td><input type="text" name="id" maxlength="10"></td>
         </tr>
         <tr>
             <td>이름</td>
-            <td><input class="input" type="text" name="name" maxlength="10"></td>
+            <td><input type="text" name="name" maxlength="10"></td>
         </tr>
         <tr>
             <td>비밀번호</td>
-            <td><input class="input" type="password" name="password" maxlength="10"></td>
+            <td><input type="password" name="password" maxlength="10"></td>
         </tr>
         <tr>
             <th colspan="2">
-                <input class="button" type="submit" value="가입">
-                <input class="button" type="reset" value="취소">
-                <input class="button" type="button" value="뒤로" onclick="location=history.back()">
+                <input type="submit" value="가입">
+                <input type="reset" value="취소">
+                <input type="button" value="뒤로" onclick="location=history.back()">
             </th>
         </tr>
     </table>

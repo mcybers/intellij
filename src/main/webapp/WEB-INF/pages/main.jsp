@@ -13,16 +13,16 @@
                 </tr>
                 <tr>
                     <td>ID</td>
-                    <td><input class="input" type="text" name="id" maxlength="10"></td>
+                    <td><input type="text" name="id" maxlength="10"></td>
                 </tr>
                 <tr>
                     <td>P/W</td>
-                    <td><input class="input" type="password" name="password" maxlength="10"></td>
+                    <td><input type="password" name="password" maxlength="10"></td>
                 </tr>
                 <tr>
                     <th colspan="2">
-                        <input class="button" type="submit" value="로그인">
-                        <input class="button" type="reset" value="취소">
+                        <input type="submit" value="로그인">
+                        <input type="reset" value="취소">
                     </th>
                 </tr>
             </table>

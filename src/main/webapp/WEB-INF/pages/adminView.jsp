@@ -8,20 +8,21 @@
         <td>아이디</td>
         <td>이름</td>
     </tr>
-    <c:forEach var="mem" items="${members}">
+    <c:forEach var="member" items="${members}">
         <tr>
             <td>
-                <a href="/modify?modifyid=${mem.id}">${mem.id}</a>
+                <a href="/modify?modifyid=${member.id}">${member.id}</a>
             </td>
             <td>
-                    ${mem.name}
+                    ${member.name}
             </td>
         </tr>
     </c:forEach>
     <tr>
         <td colspan="2">
-            <input class="button" type="button" value="유저가입" onclick="location='/join'">
-            <input class="button" type="button" value="로그아웃" onclick="location='/logout'">
+            <input type="button" value="유저가입" onclick="location='/join'">
+            <input type="button" value="로그아웃" onclick="location='/logout'">
+            <input type="button" value="이름으로 검색" onclick="location='/searchForm'">
         </td>
     </tr>
 </table>

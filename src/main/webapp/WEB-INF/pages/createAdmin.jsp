@@ -11,8 +11,8 @@
         <table border="1">
                 <tr>
                     <th>
-                        <input class="button" type="submit" value="관리자 생성">
-                        <input class="button" type="button" value="메인페이지" onclick="location='/main'">
+                        <input type="submit" value="관리자 생성">
+                        <input type="button" value="메인페이지" onclick="location='/main'">
                     </th>
                 </tr>
             </table>

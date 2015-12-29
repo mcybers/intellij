@@ -10,25 +10,25 @@
         <tr>
             <th>아이디</th>
             <td>
-                <input class="input" type="text" name="id" value="${member.id}" readonly>
+                <input type="text" name="id" value="${member.id}" readonly>
             </td>
         </tr>
         <tr>
             <th>이름</th>
             <td>
-                <input class="input" type="text" name="name" value="${member.name}">
+                <input type="text" name="name" value="${member.name}">
             </td>
         </tr>
         <tr>
             <th>비밀번호</th>
             <td>
-                <input class="input" type="password" name="password" value="${member.password}">
+                <input type="password" name="password">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input class="button" type="submit" value="수정">
-                <input class="button" type="button" value="로그아웃" onclick="location='/logout'">
+                <input type="submit" value="수정">
+                <input type="button" value="로그아웃" onclick="location='/logout'">
             </td>
         </tr>
     </table>

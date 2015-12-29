@@ -86,4 +86,20 @@ public class MemberController {
         request.getSession().removeAttribute("id");
         return "main";
     }
+
+    @RequestMapping(value = "/searchForm", method = RequestMethod.GET)
+    public String searchForm( ModelMap model) {
+
+        return "searchForm";
+    }
+
+    @RequestMapping(value ="/searchPro", method = RequestMethod.POST)
+    public String searchPro(@RequestParam String name, ModelMap model){
+        List<Member> members = memberService.findByName(name);
+        model.addAttribute("members",members);
+        return "searchResult";
+    }
+
+
+
 }

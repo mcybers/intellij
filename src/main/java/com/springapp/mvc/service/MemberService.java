@@ -20,7 +20,6 @@ import java.security.SecureRandom;
 @Transactional
 public class MemberService {
 
-
     @Autowired
     MemberRepository memberRepository;
 
@@ -81,6 +80,9 @@ public class MemberService {
         return memberRepository.findOne(memberId);
     }
 
+    public List<Member> findByName(String name){
+        return memberRepository.findByName(name);
+    }
 
     public boolean login(Member member) throws NoSuchAlgorithmException {
 

@@ -1,5 +1,7 @@
 package com.springapp.mvc;
 
+import com.springapp.mvc.domain.Member;
+import com.springapp.mvc.repository.MemberRepository;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,6 +16,8 @@ import org.springframework.web.context.WebApplicationContext;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
+
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppContextSetup;
 
 
@@ -31,6 +35,9 @@ public class AppTests {
     @Autowired
     protected WebApplicationContext wac;
 
+    @Autowired
+    MemberRepository memberRepository;
+
 
     @Before
     public void setup() {
@@ -45,6 +52,7 @@ public class AppTests {
     @Test
     @Transactional(readOnly = false)
     public void simple() throws Exception {
+
 //        mockMvc.perform(get("/"))
 //                .andExpect(status().isOk())
 //                .andExpect(view().name("hello"));

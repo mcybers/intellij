@@ -11,7 +11,7 @@
                 아이디
             </td>
             <td>
-                <input class="input" type="text" name="id" value="${member.id}" readonly>
+                <input type="text" name="id" value="${member.id}" readonly>
             </td>
         </tr>
         <tr>
@@ -19,7 +19,7 @@
                 이름
             </td>
             <td>
-                <input class="input" type="text" name="name" value="${member.name}">
+                <input type="text" name="name" value="${member.name}">
             </td>
         </tr>
         <tr>
@@ -27,13 +27,13 @@
                 비밀번호
             </td>
             <td>
-                <input class="input" type="password" name="password" value="${member.password}">
+                <input type="password" name="password">
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <input class="button" type="submit" value="수정">
-                <input class="button" type="button" value="뒤로" onclick="location='/main'">
+                <input type="submit" value="수정">
+                <input type="button" value="뒤로" onclick="location='/main'">
             </td>
         </tr>
     </table>
