@@ -64,8 +64,8 @@ public class MemberService {
 
     //중복된 ID 검색
     private void validateDuplicateMember(Member member) {
-        Member mem = memberRepository.findOne(member.getId());
-        if (mem != null) {
+        Member foundMember = memberRepository.findOne(member.getId());
+        if (foundMember != null) {
             throw new IllegalStateException("이미 존재하는 회원입니다.");
         }
     }
@@ -80,6 +80,7 @@ public class MemberService {
         return memberRepository.findOne(memberId);
     }
 
+    //같은 이름의 아이디 찾기
     public List<Member> findByName(String name){
         return memberRepository.findByName(name);
     }

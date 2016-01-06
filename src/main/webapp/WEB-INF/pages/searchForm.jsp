@@ -14,8 +14,8 @@
                 <input type="submit" value="찾기">
             </td>
         </tr>
-        <tr colspan="3">
-            <td>
+        <tr>
+            <td colspan="3">
                 <input type="button" value="메인으로 가기" onclick="location='/main'">
             </td>
         </tr>

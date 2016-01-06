@@ -25,7 +25,7 @@
             <th colspan="2">
                 <input type="submit" value="가입">
                 <input type="reset" value="취소">
-                <input type="button" value="뒤로" onclick="location=history.back()">
+                <input type="button" value="뒤로" onclick="location='main'">
             </th>
         </tr>
     </table>

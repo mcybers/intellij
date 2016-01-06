@@ -13,8 +13,8 @@
         <td>${member.name}</td>
     </tr>
     </c:forEach>
-    <tr colspan="2">
-        <td>
+    <tr>
+        <td colspan="2">
             <input type="button" value="메인으로 가기" onclick="location='/main'">
         </td>
     </tr>

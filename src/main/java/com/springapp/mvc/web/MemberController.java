@@ -53,7 +53,7 @@ public class MemberController {
 
         memberService.join(member);
         model.addAttribute("members", memberService.findMembers());
-        return "main";
+        return "adminView";
     }
 
     @RequestMapping(value = "/modify", method = RequestMethod.GET)
